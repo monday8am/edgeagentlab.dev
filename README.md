@@ -1,54 +1,50 @@
 # Edge Agent Lab - Microsite
 
-Static site for [edgeagentlab.dev](https://edgeagentlab.dev) hosted on GitHub Pages.
+Microsite for [edgeagentlab.dev](https://edgeagentlab.dev), built with React, TypeScript, and Vite.
+Hosted on GitHub Pages.
 
 ## Purpose
 
-Hosts test definitions for the KoogAgent Android app:
-- `tests/tool_tests.json` - Function calling test scenarios
+- **Landing Page**: Explains the purpose of the Edge Agent Lab.
+- **Test Visualization**: Friendly UI to browse the `tests/tool_tests.json` definitions.
+- **Backend**: Serves the static test definitions for the Android app at `https://edgeagentlab.dev/tests/tool_tests.json`.
 
-## Local Development
+## Development
 
-Just open `index.html` in a browser. No build step required.
+Prerequisite: Node.js 18+
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open `http://localhost:5173`
 
 ## Deployment
 
-Push to `main` branch → GitHub Pages auto-deploys.
+Automated via GitHub Actions. Push to `main` branch triggers the build and deployment workflow to GitHub Pages.
 
-## DNS Configuration (IONOS)
+> **Note on File Structure**:
+> The `tests/tool_tests.json` file is located in `public/tests/`.
+> This ensures it is served at the root `/tests/tool_tests.json` path after build, maintaining compatibility with the Android app.
 
-### Required DNS Records
+## Infrastructure
 
-| Type | Host | Value | TTL |
-|------|------|-------|-----|
-| A | @ | 185.199.108.153 | 3600 |
-| A | @ | 185.199.109.153 | 3600 |
-| A | @ | 185.199.110.153 | 3600 |
-| A | @ | 185.199.111.153 | 3600 |
-| CNAME | www | YOUR_USERNAME.github.io | 3600 |
+- **Domain**: IONOS
+- **Hosting**: GitHub Pages
+- **DNS**: A records point to GitHub Pages IPs.
 
-### Steps
+## Architecture
 
-1. Log into IONOS → Domains & SSL → Select `edgeagentlab.dev`
-2. Go to DNS settings
-3. Add the 4 A records pointing to GitHub's IP addresses
-4. Add the CNAME record for `www` subdomain
-5. Wait 10-30 minutes for propagation
-6. In GitHub repo Settings → Pages → Custom domain: enter `edgeagentlab.dev`
-7. Check "Enforce HTTPS" once DNS propagates
+- **Framework**: React + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Custom CSS utilities with CSS variables
 
-### Verify
+## Notes
 
-```bash
-dig edgeagentlab.dev +noall +answer
-# Should show GitHub IPs
-```
-
-## App Integration
-
-The Android app fetches tests from:
-```
-https://edgeagentlab.dev/tests/tool_tests.json
-```
-
-Update the URL in your app's test loader to point here instead of the bundled resource.
+- Favicon currently uses Vite default (`public/vite.svg`). Replace with custom Edge Agent Lab icon when available.
