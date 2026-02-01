@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edge Agent Lab - Testing Platform for On-Device AI</title>
+  <meta name="description" content="A testing platform for evaluating small language model agents on Android devices. Test function calling, tool selection, and agentic workflows at the edge.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Edge Agent Lab</h1>
+      <p class="tagline">Testing platform for on-device AI agents</p>
+    </header>
+
+    <section>
+      <h2>What is this?</h2>
+      <p>
+        Edge Agent Lab is an Android testing platform for evaluating small language model (SLM) 
+        agents directly on mobile devices. It provides tools to test function calling capabilities, 
+        measure inference performance, and understand where edge AI succeeds and fails.
+      </p>
+      <p>
+        Built with <a href="https://github.com/JetBrains/koog" target="_blank">JetBrains Koog</a> 
+        for agent orchestration and Google's <a href="https://ai.google.dev/edge/litert/inference/lm" target="_blank">LiteRT-LM</a> 
+        for on-device inference.
+      </p>
+    </section>
+
+    <section>
+      <h2>Test Endpoint</h2>
+      <p>The app fetches test definitions from this URL:</p>
+      <div class="test-endpoint">
+        <code>GET https://edgeagentlab.dev/tests/tool_tests.json</code>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <div class="links-grid">
+        <a href="https://github.com/monday8am/koogagent" class="link-card" target="_blank">
+          <h3>GitHub Repository</h3>
+          <p>Source code and documentation</p>
+        </a>
+        <a href="https://monday8am.com/blog/2025/10/01/flat-notifications-edge-ai.html" class="link-card" target="_blank">
+          <h3>Article: From Flat Notifications to Edge AI</h3>
+          <p>The original prototype</p>
+        </a>
+        <a href="https://monday8am.com/blog/2025/12/10/function-calling-edge-ai.html" class="link-card" target="_blank">
+          <h3>Article: Tool Calling Research</h3>
+          <p>Model conversion and testing</p>
+        </a>
+        <a href="tests/tool_tests.json" class="link-card">
+          <h3>Test Definitions</h3>
+          <p>View raw JSON test file</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Roadmap <span class="badge badge-wip">WIP</span></h2>
+      <p>
+        <strong>Current:</strong> Static test JSON hosted here, fetched by the app.<br>
+        <strong>Next:</strong> Web-based test editor for creating custom evaluation scenarios.<br>
+        <strong>Later:</strong> Performance tracking and visualization across devices.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Built by <a href="https://monday8am.com" target="_blank">Angel Anton</a> · 
+        <a href="https://github.com/monday8am/koogagent" target="_blank">View on GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
