@@ -32,7 +32,7 @@ function App() {
 
           <section className="mb-16">
             <h2 className="mb-6 text-2xl">Test Endpoint</h2>
-            <p className="text-text-muted mb-4">The app fetches test definitions from this URL:</p>
+            <p className="text-muted mb-4">The app fetches test definitions from this URL:</p>
             <div className="test-endpoint">
               <code>GET https://edgeagentlab.dev/tests/tool_tests.json</code>
             </div>
@@ -69,16 +69,16 @@ function App() {
             </div>
           </section>
 
-          <section id="test-viewer" className="mb-12 pt-12 border-t border-light">
+          <section id="test-viewer" className="mb-12 pt-12">
             <h2 className="mb-6 text-2xl">Test Inspector</h2>
-            <p className="text-text-muted mb-8 max-w-2xl">
+            <p className="text-muted mb-8 max-w-2xl">
               Below are the active test definitions served to the Android application.
             </p>
             <TestViewer />
           </section>
         </main>
 
-        <footer className="mt-20 py-8 border-t border-light text-center text-muted text-sm">
+        <footer className="mt-20 py-8 text-center text-muted text-sm">
           <p>
             Built by <a href="https://monday8am.com" target="_blank" rel="noreferrer">Angel Anton</a> ·
             <a href="https://github.com/monday8am/koogagent" target="_blank" rel="noreferrer"> View on GitHub</a>
