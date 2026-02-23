@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --bg-dark: #0a0a0a;
+  --bg-dark: #080808;
   --bg-card: #111111;
   --bg-card-hover: #161616;
 
@@ -13,7 +13,7 @@
   --accent-primary: #00ff88;
   --accent-secondary: #00cc6a;
 
-  --border-light: #222222;
+  --border-light: #1e1e1e;
 
   /* Status Colors */
   --success: #00ff88;
@@ -59,6 +59,7 @@ h6 {
 h1 {
   font-size: 2.5rem;
   color: var(--accent-primary);
+  text-shadow: 0 0 8px rgba(0,255,136,0.45), 0 0 24px rgba(0,255,136,0.15);
 }
 
 h2 {
@@ -73,6 +74,7 @@ a {
   color: var(--accent-primary);
   text-decoration: none;
   transition: color var(--transition-fast);
+  text-shadow: 0 0 6px rgba(0,255,136,0.15);
 }
 
 a:hover {
@@ -511,3 +513,54 @@ code {
 /* Error / loading states */
 .text-error { color: var(--error); }
 .p-8 { padding: 2rem; }
+
+/* CRT scanlines overlay (dark mode only) */
+[data-theme="dark"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.04) 2px,
+    rgba(0,0,0,0.04) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-dark: #f5f3ec;
+  --bg-card: #edebe2;
+  --bg-card-hover: #e5e3da;
+  --text-primary: #1a1a14;
+  --text-secondary: #4a4944;
+  --text-muted: #8a877e;
+  --accent-primary: #006b3c;
+  --accent-secondary: #005530;
+  --success: #006b3c;
+  --border-light: #d0cec4;
+}
+
+[data-theme="light"] h1 { text-shadow: none; }
+[data-theme="light"] a  { text-shadow: none; }
+
+/* Theme toggle button */
+.theme-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0;
+  transition: color var(--transition-fast);
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-primary);
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 interface BackLink {
   href: string;
@@ -14,9 +15,14 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ backLink, title, subtitle }) => {
   return (
     <div className="page-header">
-      <a href={backLink.href} className="back-link">{backLink.label}</a>
-      <h1>{title}</h1>
-      {subtitle && <p className="page-subtitle">{subtitle}</p>}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <div>
+          <a href={backLink.href} className="back-link">{backLink.label}</a>
+          <h1>{title}</h1>
+          {subtitle && <p className="page-subtitle">{subtitle}</p>}
+        </div>
+        <ThemeToggle />
+      </div>
     </div>
   );
 };

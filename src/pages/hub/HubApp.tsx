@@ -1,5 +1,6 @@
 import React from 'react';
 import PageFooter from '../../components/PageFooter';
+import ThemeToggle from '../../components/ThemeToggle';
 
 const HubApp: React.FC = () => {
   return (
@@ -7,13 +8,16 @@ const HubApp: React.FC = () => {
       <div className="container">
 
         {/* Hub header */}
-        <header className="hub-header">
-          <h1>Edge Agent Lab</h1>
-          <p className="hub-tagline">Testing the boundaries of on-device AI on Android</p>
-          <p className="hub-description">
-            A collection of apps and experiments exploring agentic workflows with small language models on mobile devices.
-          </p>
-          <p className="hub-author">by <a href="https://monday8am.com" target="_blank" rel="noopener">Anton</a></p>
+        <header className="hub-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div>
+            <h1>Edge Agent Lab</h1>
+            <p className="hub-tagline">Testing the boundaries of on-device AI on Android</p>
+            <p className="hub-description">
+              A collection of apps and experiments exploring agentic workflows with small language models on mobile devices.
+            </p>
+            <p className="hub-author">by <a href="https://monday8am.com" target="_blank" rel="noopener">Anton</a></p>
+          </div>
+          <ThemeToggle />
         </header>
 
         {/* Apps section */}
