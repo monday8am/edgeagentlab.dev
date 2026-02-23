@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   /* Colors */
@@ -36,7 +36,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
@@ -50,8 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
   line-height: 1.2;
   color: var(--text-primary);
 }
