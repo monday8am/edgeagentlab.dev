@@ -17,7 +17,7 @@ Edge Agent Lab is a collection of Android apps and experiments exploring on-devi
 ```
 edgeagentlab.dev/
 ├── index.html          ← Hub landing page
-├── koogagent.html      ← KoogAgent app page
+├── explorer.html       ← Explorer app page
 ├── cycling-copilot.html ← Cycling Copilot demo page
 ├── assets/
 │   ├── styles.css
@@ -45,11 +45,11 @@ Entry point. Shows what Edge Agent Lab is, links to the apps, links to articles 
 
 **Apps section — two cards:**
 
-Card 1: **KoogAgent**
+Card 1: **Explorer**
 - Subtitle: "Edge AI Testing Platform"
 - Short description: "Browse, download, and test small language models for text generation and function calling on Android. An alternative to Google's AI Edge Gallery focused on agentic workflows."
 - Key features (very brief): Multi-runtime support (LiteRT-LM, MediaPipe) · Koog agent integration · Remote test definitions · No HuggingFace login required
-- Links: [Learn more →](koogagent.html) · [GitHub](https://github.com/monday8am/koogagent)
+- Links: [Learn more →](explorer.html) · [GitHub](https://github.com/monday8am/edgelab)
 - Status badge: "Active development"
 
 Card 2: **Cycling Copilot**
@@ -85,7 +85,7 @@ List of articles (link to monday8am.com, open in new tab):
 
 ---
 
-## Page 2: KoogAgent (`koogagent.html`)
+## Page 2: Explorer (`explorer.html`)
 
 ### Purpose
 Detailed page for the main testing platform app.
@@ -94,11 +94,11 @@ Detailed page for the main testing platform app.
 
 **Header:**
 - Back link: "← Edge Agent Lab"
-- Title: "KoogAgent"
+- Title: "Explorer"
 - Subtitle: "Edge AI Testing Platform for Android"
 
 **What it is (2-3 paragraphs):**
-KoogAgent is an Android app for browsing, downloading, and testing small language models directly on mobile devices. It integrates JetBrains Koog for agent orchestration with Google's inference libraries (LiteRT-LM and MediaPipe), providing a platform to evaluate how well models handle text generation and function calling in resource-constrained environments.
+Explorer is an Android app for browsing, downloading, and testing small language models directly on mobile devices. It integrates JetBrains Koog for agent orchestration with Google's inference libraries (LiteRT-LM and MediaPipe), providing a platform to evaluate how well models handle text generation and function calling in resource-constrained environments.
 
 Think of it as an alternative to Google's AI Edge Gallery, focused specifically on text generation and agentic workflows. It adds what AI Edge Gallery doesn't: agent framework integration, tool calling support via both runtimes, remote test definitions, and no HuggingFace sign-up requirement.
 
@@ -118,12 +118,12 @@ Think of it as an alternative to Google's AI Edge Gallery, focused specifically 
 
 **Screenshots:**
 Placeholder references — Anton will add actual images:
-- `assets/images/koogagent-model-select.png` — Model selection screen
-- `assets/images/koogagent-inference.png` — Inference + notification output
-- `assets/images/koogagent-tests.png` — Test runner screen
+- `assets/images/explorer-model-select.png` — Model selection screen
+- `assets/images/explorer-inference.png` — Inference + notification output
+- `assets/images/explorer-tests.png` — Test runner screen
 
 **Links:**
-- GitHub: https://github.com/monday8am/koogagent
+- GitHub: https://github.com/monday8am/edgelab
 - Play Store: (coming soon)
 - Related articles: links to the three monday8am.com posts
 
@@ -222,5 +222,5 @@ Voice Input → FunctionGemma (intent + params) → API Router (Koog) → [Routi
 - [ ] Actual app screenshots (4-5 images)
 - [ ] Colab notebook URL for model conversion
 - [ ] GitHub repo URL for Cycling Copilot (when created)
-- [ ] Play Store link for KoogAgent (when published)
+- [ ] Play Store link for Explorer (when published)
 - [ ] Any additional apps/demos to add as cards

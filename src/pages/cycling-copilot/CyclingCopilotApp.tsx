@@ -95,12 +95,12 @@ User`}</pre>
           <div className="prose">
             <ul>
               <li>
-                <a href="https://github.com/monday8am/koogagent/blob/main/docs/cyclingcopilot/roadmap.md" target="_blank" rel="noopener">
+                <a href="https://github.com/monday8am/edgelab/blob/main/docs/cyclingcopilot/roadmap.md" target="_blank" rel="noopener">
                   Roadmap
                 </a>
               </li>
               <li>
-                <a href="https://github.com/monday8am/koogagent/blob/main/docs/cyclingcopilot/ui-architecture.md" target="_blank" rel="noopener">
+                <a href="https://github.com/monday8am/edgelab/blob/main/docs/cyclingcopilot/ui-architecture.md" target="_blank" rel="noopener">
                   UI Architecture
                 </a>
               </li>

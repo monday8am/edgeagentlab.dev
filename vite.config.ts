@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        koogagent: resolve(__dirname, 'koogagent/index.html'),
+        explorer: resolve(__dirname, 'explorer/index.html'),
         cycling: resolve(__dirname, 'cycling-copilot/index.html'),
       },
     },

@@ -25,9 +25,9 @@ const HubApp: React.FC = () => {
           <p className="section-title">Apps</p>
           <div className="app-grid">
 
-            {/* KoogAgent card */}
+            {/* Explorer card */}
             <div className="app-card">
-              <h3>KoogAgent</h3>
+              <h3>Explorer</h3>
               <p className="app-subtitle">Edge AI Testing Platform</p>
               <p>
                 Browse, download, and test small language models for text generation and function
@@ -41,8 +41,8 @@ const HubApp: React.FC = () => {
               </ul>
               <span className="badge badge-active">Active development</span>
               <div className="app-links">
-                <a href="/koogagent/">Learn more →</a>
-                <a href="https://github.com/monday8am/koogagent" target="_blank" rel="noopener">GitHub</a>
+                <a href="/explorer/">Learn more →</a>
+                <a href="https://github.com/monday8am/edgelab" target="_blank" rel="noopener">GitHub</a>
               </div>
             </div>
 

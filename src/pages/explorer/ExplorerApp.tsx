@@ -3,14 +3,14 @@ import PageHeader from '../../components/PageHeader';
 import PageFooter from '../../components/PageFooter';
 import TestViewer from '../../components/TestViewer';
 
-const KoogAgentApp: React.FC = () => {
+const ExplorerApp: React.FC = () => {
   return (
     <div className="bg-dark min-h-screen animate-fade-in">
       <div className="container">
 
         <PageHeader
           backLink={{ href: '/', label: '← Edge Agent Lab' }}
-          title="KoogAgent"
+          title="Explorer"
           subtitle="Edge AI Testing Platform for Android"
         />
 
@@ -18,7 +18,7 @@ const KoogAgentApp: React.FC = () => {
         <section className="page-section">
           <div className="prose">
             <p>
-              KoogAgent is an Android app for browsing, downloading, and testing small language models
+              Explorer is an Android app for browsing, downloading, and testing small language models
               directly on mobile devices. It integrates JetBrains Koog for agent orchestration with
               Google's inference libraries (LiteRT-LM and MediaPipe), providing a platform to evaluate
               how well models handle text generation and function calling in resource-constrained environments.
@@ -113,7 +113,7 @@ const KoogAgentApp: React.FC = () => {
           <div className="prose">
             <ul>
               <li>
-                <a href="https://github.com/monday8am/koogagent/blob/main/docs/edgelab/roadmap.md" target="_blank" rel="noopener">
+                <a href="https://github.com/monday8am/edgelab/blob/main/docs/edgelab/roadmap.md" target="_blank" rel="noopener">
                   Roadmap
                 </a>
               </li>
@@ -125,8 +125,8 @@ const KoogAgentApp: React.FC = () => {
         <section className="page-section">
           <p className="section-title">Links</p>
           <div className="resource-links">
-            <a href="https://github.com/monday8am/koogagent" target="_blank" rel="noopener">
-              GitHub — monday8am/koogagent
+            <a href="https://github.com/monday8am/edgelab" target="_blank" rel="noopener">
+              GitHub — monday8am/edgelab
             </a>
             <span className="text-sm text-muted">Play Store — coming soon</span>
           </div>
@@ -178,4 +178,4 @@ const KoogAgentApp: React.FC = () => {
   );
 };
 
-export default KoogAgentApp;
+export default ExplorerApp;
