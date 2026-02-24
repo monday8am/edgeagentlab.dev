@@ -125,8 +125,8 @@ const ExplorerApp: React.FC = () => {
         <section className="page-section">
           <p className="section-title">Links</p>
           <div className="resource-links">
-            <a href="https://github.com/monday8am/edgelab" target="_blank" rel="noopener">
-              GitHub — monday8am/edgelab
+            <a href="https://github.com/monday8am/edgelab/tree/main/app/explorer" target="_blank" rel="noopener">
+              GitHub — monday8am/edgelab/app/explorer
             </a>
             <span className="text-sm text-muted">Play Store — coming soon</span>
           </div>

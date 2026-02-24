@@ -112,7 +112,9 @@ User`}</pre>
         <section className="page-section">
           <p className="section-title">Links</p>
           <div className="resource-links">
-            <span className="text-sm text-muted">GitHub — <a href="#TODO_CYCLING_GITHUB_URL">coming soon</a></span>
+            <a href="https://github.com/monday8am/edgelab/tree/main/app/copilot" target="_blank" rel="noopener" className="text-sm">
+              GitHub — monday8am/edgelab/app/copilot
+            </a>
             <a
               href="https://monday8am.com/blog/2026/02/08/lets-talk-about-functiongemma.html"
               target="_blank"

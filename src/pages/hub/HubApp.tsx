@@ -120,8 +120,11 @@ const HubApp: React.FC = () => {
             <code>https://edgeagentlab.dev/tests/tool_tests.json</code>
           </div>
           <div className="resource-links mt-4">
-            <a href="#TODO_COLAB_URL" target="_blank" rel="noopener" className="text-sm">
-              Model conversion notebook (Colab)
+            <a href="https://github.com/monday8am/skills" target="_blank" rel="noopener" className="text-sm">
+              functiongemma-trainer — agent skill for fine-tuning FunctionGemma (270M) for on-device function calling
+            </a>
+            <a href="https://monday8am.com/assets/docs/decision_tree_v2.html" target="_blank" rel="noopener" className="text-sm">
+              FunctionGemma decision tree — is your use case a good fit?
             </a>
             <a href="https://gorilla.cs.berkeley.edu/leaderboard.html" target="_blank" rel="noopener" className="text-sm">
               Berkeley BFCL Leaderboard
