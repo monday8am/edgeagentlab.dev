@@ -89,6 +89,25 @@ User`}</pre>
           </p>
         </section>
 
+        {/* Documentation */}
+        <section className="page-section">
+          <p className="section-title">Documentation</p>
+          <div className="prose">
+            <ul>
+              <li>
+                <a href="https://github.com/monday8am/koogagent/blob/main/docs/cyclingcopilot/roadmap.md" target="_blank" rel="noopener">
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/monday8am/koogagent/blob/main/docs/cyclingcopilot/ui-architecture.md" target="_blank" rel="noopener">
+                  UI Architecture
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* Links */}
         <section className="page-section">
           <p className="section-title">Links</p>

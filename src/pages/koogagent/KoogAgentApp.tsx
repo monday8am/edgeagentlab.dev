@@ -107,6 +107,20 @@ const KoogAgentApp: React.FC = () => {
           <TestViewer />
         </section>
 
+        {/* Documentation */}
+        <section className="page-section">
+          <p className="section-title">Documentation</p>
+          <div className="prose">
+            <ul>
+              <li>
+                <a href="https://github.com/monday8am/koogagent/blob/main/docs/edgelab/roadmap.md" target="_blank" rel="noopener">
+                  Roadmap
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* Links */}
         <section className="page-section">
           <p className="section-title">Links</p>
